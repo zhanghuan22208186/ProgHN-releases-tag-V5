@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mon CV</title>
+</head>
+<body>
+
+<img src="new_logo_site.jpg" alt="Logo">
+<script src="fichier.js"></script>
+
+  <p>Mon CV des trois dernières années :</p>
+  <table border="1">
+    <thead>
+      <tr><th>année universitaire</th><th>Statut</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>2024-2025</td><td>M2</td></tr>
+      <tr><td>2023-2024</td><td>M1</td></tr>
+      <tr><td>2022-2023</td><td>M1</td></tr>
+    </tbody>
+  </table>
+
+  <p>Voici les cinq derniers livres que j'ai lus :</p>
+  <ol>
+    <li><em>Syntaxe générale, une introduction typologique</em>, Creissels, Denis. Paris: Hermes Science Publications</li>
+    <li><em>Transitivity, valency and voice</em>, Creissels, Denis. Oxford: Oxford University Press.</li>
+    <li><em>Grammatical Voice</em>, Zúñiga, Fernando & Kittilä, Seppo. Cambridge: Cambridge University Press</li>
+    <li><em>The Languages of Native North America</em>, Marianne Mithun. Cambridge: Cambridge University Press</li>
+    <li><em>The Emergence of Japanese Kingship</em>, Joan Piggott. Stanford University Press</li>
+  </ol>
+
+  <!-- Zone de saisie nom + bouton -->
+  <p>
+    <label for="nom">Comment vous appelez-vous ?</label>
+    <input type="text" id="nom" value="ZHANG">
+    <button onclick="direBonjour()">Bonjour...</button>
+  </p>
+
+  <!-- Bouton pour afficher/cacher aide -->
+  <p>
+    <button onclick="toggleAide()" id="btnAide">Cacher l’aide</button>
+  </p>
+
+  <!-- Zone d'aide -->
+  <div id="aide">
+    <p>Ici, on va afficher l’aide.</p>
+  </div>
+
+  <!-- Lien vers Sorbonne Nouvelle -->
+  <p>
+    <a href="https://www.sorbonne-nouvelle.fr/" target="_blank">
+      Visiter le site de la Sorbonne Nouvelle
+    </a>
+  </p>
+
+  <!-- ====== Exercice 4 : Texte à segmenter ====== -->
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-4 has-text-info">Exercice 4 – Découpage d’un texte avec forEach()</h2>
+
+      <p>
+        Cet exercice utilise <code>forEach()</code> pour parcourir un texte et afficher chaque mot dans une ligne de tableau.
+      </p>
+
+      <textarea id="texteExercice4" rows="4" cols="60" class="textarea mt-4 mb-3">Je suis étudiant à l'université.</textarea>
+      <br />
+
+      <button onclick="exercice4()" class="button is-link">Segmenter et afficher</button>
+
+      <div id="exercice4Resultat" class="box mt-4"></div>
+    </div>
+  </section>
+
+  <script src="devoirarray.js"></script>
+
+</body>
+</html>
